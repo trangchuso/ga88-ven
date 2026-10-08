@@ -231,8 +231,10 @@ body {
 .bottom-auth-bar {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 50%; /* Căn ra giữa màn hình */
+    transform: translateX(-50%); /* Kéo ngược lại 50% kích thước của chính nó để nằm chính giữa */
     width: 100%;
+    max-width: 480px; /* Giới hạn chiều rộng khớp với khung điện thoại */
     display: flex;
     justify-content: space-between;
     gap: 12px;
